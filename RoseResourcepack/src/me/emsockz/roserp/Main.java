@@ -33,7 +33,7 @@ public class Main extends JavaPlugin {
 		instance = this;
 		adventure = BukkitAudiences.create(instance);
 		loadMessagesFiles();
-		loadResourcepackFiles();
+		
 		
 		saveDefaultConfig();
 		PluginCFG.LANG = getConfig().getString("lang");
@@ -45,14 +45,8 @@ public class Main extends JavaPlugin {
         	pluginCommand.setExecutor(new SubCommandManager());
         	pluginCommand.setTabCompleter(new TabCommandManager());
     	 
-        	
+        loadResourcepackFiles();	
         host = new Hosting();
-        	
-		if (!new File(instance.getDataFolder(), "resourcepack/").exists()) 
-			new File(instance.getDataFolder(), "resourcepack/").mkdirs();
-        if (!new File(instance.getDataFolder(), "files/"+PluginCFG.ZIP_ARCHIVE_NAME+".zip").exists())
-        	Packer.packFiles(null);
-        
 	}
 	
 	
@@ -94,6 +88,8 @@ public class Main extends JavaPlugin {
 			if (!new File(instance.getDataFolder(), f).exists()) 
 				instance.saveResource(f, false);
 		});
+        if (!new File(instance.getDataFolder(), "files/"+PluginCFG.ZIP_ARCHIVE_NAME+".zip").exists())
+        	Packer.packFiles(null);
 	}
 	
     public static void logInfo(String text){

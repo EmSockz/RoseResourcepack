@@ -41,7 +41,7 @@ public class Packer {
         File[] files = folder.listFiles();
         try {
         	for (File file : files) {
-        		if (PluginCFG.IGNORE_FILES.contains(Files.getFileExtension(file.getName()))) return;
+        		if (PluginCFG.IGNORE_FILES.contains(Files.getFileExtension(file.getName()))) continue;
         		
                 if (file.isDirectory()) {
                     addFolderToZip(file, baseName.replace("resourcepack/", "")+"/"+file.getName().replace("resourcepack", ""), zos);
