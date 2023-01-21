@@ -2,7 +2,7 @@ name: RoseResourcepack
 author: EmSockz
 main: me.emsockz.roserp.Main
 api-version: 1.13
-version: 1.0
+version: 0.1.01
 commands:
   roserp:
     usage: /<command>
