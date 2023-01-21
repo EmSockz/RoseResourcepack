@@ -1,0 +1,21 @@
+NoPerm: "&cНет прав"  
+ReloadPlugin: "&aПлагин успешно перезагружен"
+CommandNotFound: "&cКоманда не найдена"
+NotForConsole: "&cЭту команду может выполнять только игрок"
+RPSuccessfullyPacked: "&aРесурспак успешно запакован в архив"
+PlayerNotFound: "&cИгрок не найден"
+HelpCommand:
+  - ' '
+  - '&c&lRoseResourcepack &8&l|&r &7Помощь по командам'
+  - ' '
+  - '&c&l» Команды&8:'
+  - '&c› &c/roserp help &7- &fПосмотреть помощь по командам.'
+  - ' '
+HelpCommandAdmin:
+  - ' '
+  - '&c&lRoseResourcepack &8&l|&r &7Помощь по командам'
+  - ' '
+  - '&c&l» Commands&8:'
+  - '&c› &c/roserp help &7- &fПосмотреть помощь по командам.'
+  - '&c› &c/roserp reload &7- &fПерезагрузить плагин'
+  - ' '

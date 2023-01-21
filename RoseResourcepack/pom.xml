@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>RoseResourcepack</groupId>
   <artifactId>RoseResourcepack</artifactId>
-  <version>0.1.01</version>
+  <version>0.1</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -13,6 +13,60 @@
           <release>17</release>
         </configuration>
       </plugin>
+      <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-shade-plugin</artifactId>
+		    <version>3.2.4</version>
+			<executions>
+			  <execution>
+			    <phase>package</phase>
+			    <goals>
+			      <goal>shade</goal>
+			    </goals>
+				<configuration>
+				  <createDepencyReducedPom>false</createDepencyReducedPom>
+				</configuration>
+			  </execution>
+			</executions>
+	  </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+       <id>sonatype-oss-snapshots1</id>
+       <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>net.kyori</groupId>
+      <artifactId>adventure-platform-bukkit</artifactId>
+      <version>4.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>net.kyori</groupId>
+      <artifactId>adventure-text-minimessage</artifactId>
+      <version>4.12.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>spigot-api</artifactId>
+      <version>1.19.3-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.takes</groupId>
+      <artifactId>takes</artifactId>
+      <version>1.24.4</version>
+    </dependency>
+	<dependency>
+	  <groupId>io.vertx</groupId>
+	  <artifactId>vertx-maven-service-factory</artifactId>
+	  <version>4.3.7</version>
+	</dependency>
+  </dependencies>
 </project>
