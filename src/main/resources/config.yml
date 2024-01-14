@@ -1,4 +1,4 @@
-lang: "ru"
+lang: "en"
 loadDefaultFiles: true
 port: 8085 #Port
 serverIP: "127.0.0.1" # Your server IP. Example: 741.348.166.648. NOT localhost/127.0.0.1
