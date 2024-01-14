@@ -1,0 +1,35 @@
+Prefix: ""
+
+NoPerm:
+  - "&cNo perm"
+ReloadPlugin:
+  - "&aPlugin successfully reloaded"
+CommandNotFound:
+  - "&cCommand not found"
+NotForConsole:
+  - "&cThis command can only be executed by the player"
+RPSuccessfullyPacked:
+  - "&aResourcepack {pack} successfully packed into archive"
+PlayerNotFound:
+  - "&cPlayer not found"
+PackNotFound:
+  - "&cResourcepack not found"
+HelpCommand:
+  - ' '
+  - '&c&lRoseResourcepack &8&l|&r &7Help Commands'
+  - ' '
+  - '&c&l» Commands&8:'
+  - '&c› &c/roserp help &7- &fShow help commands.'
+  - '&c› &c/roserp texture <pack> &7- &fApply resourcepack.'
+  - ' '
+HelpCommandAdmin:
+  - ' '
+  - '&c&lRoseResourcepack &8&l|&r &7Help Commands'
+  - ' '
+  - '&c&l» Commands&8:'
+  - '&c› &c/roserp help &7- &fShow help commands.'
+  - '&c› &c/roserp reload &7- &fReload plugin.'
+  - '&c› &c/roserp zip &7- &fpack the resourcepack into a zip archive.'
+  - '&c› &c/roserp texture <pack> &7- &fApply resourcepack.'
+  - '&c› &c/roserp texture <pack> <player> &7- &fApply resourcepack to other player.'
+  - ' '

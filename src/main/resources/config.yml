@@ -1,0 +1,16 @@
+lang: "ru"
+loadDefaultFiles: true
+port: 8085 #Port
+serverIP: "127.0.0.1" # Your server IP. Example: 741.348.166.648. NOT localhost/127.0.0.1
+packs:
+  main:
+    enableHash: true
+    zipArchiveName: "main"
+  low_quality:
+    enableHash: true
+    zipArchiveName: "low_quality"
+ignoreFiles:
+  - "zip"
+  - "txt"
+  - "yml"
+  - "json1"
